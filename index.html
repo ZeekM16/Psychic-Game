@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Psychic Game</h1>
-    <h2>Guess what letter im thinking of</h2>
+    <p>Guess what letter im thinking of</p>
     <p>Wins:</p>
     <P>Losses:</P>
     <p>Guesses Left:</p>
@@ -20,13 +20,76 @@
         <p id="losses-text"></p>
         <p id="ties-text"></p>
 </div>
+<script type="text/javascrpt" src="assets/javascript/game.js"></script>
     <script>
+        
+var $ = function (id){
+    return document.getElementById(id);
+}
 
-        var Guess = {
+
+var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+// Issues getting letters to prompt on screen
+
+console.log(letters);
+var userchoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var computerchoice = Math.floor(math.random()*26); 
+var answer = userchoice[choice];
+var Display = [MyLength];
+var Wins = MyLength;
+var letters = answer.split('');
+var attemptsRemain = 10;
+var output = "";
+var UserLetter = "";
+
+
+
+
+// var UserText = document.getElementById(UserText);
+        // var Losses
+        // var Guesses = 10;
+        // var Display= [MyLength]
+        // var Win = MyLength;
+
+
+        // document.onekeyup = function(event) {
+        //         var letters = event.key;
+
+
+        // }
+        // Guesses = prompt ("whats your guess?");
+
+        
+        
+        
+        // for (i = 0; 1 < ComputerChoice.length; i++);{
+        //     if (answer == guess){
+        //         alert("correct!");
+        //         break;
+        //     }else {
+        //         guess == prompt("Try again");
+        //     }
+        // }
+
+        var submit =function()
+        {
+            output = "";
+            letters = $("game").value;
+            $("game").value = "";
+
+        for (var c= 0; c< answer.length; c++){
 
         }
+    
+    
+            
+        
+
+        
+        
 
     </script>
     
 </body>
+
 </html>
